@@ -1,14 +1,12 @@
 import React from "react";
-import Header from "./chatBot/header/Header";
-import Chat from "./chatBot/chatting/Chat";
-import Profile from "./chatBot/profile/Profile";
+import RightSide from "./chatBot/components/RightSide";
+import LeftSide from "./chatBot/components/LeftSide";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Profile />
-      <Chat />
+      <LeftSide />
+      <RightSide />
     </div>
   );
 }
