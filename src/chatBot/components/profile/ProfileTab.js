@@ -4,30 +4,34 @@ import Link from "../Link";
 function ProfileTab(props) {
   return (
     <div>
-      <div>
+      <div className="tab-box__currentlyOn">
         <p>Currently on :</p>
-        <icon>{props.icon}</icon>
-        <input type="text" value="" />
-        <Link link="input_value" name={<i class="fas fa-share"></i>} />
+        <span>{props.icon}</span>
+        <input type="text" />
+        <Link link="input_value" name={<i className="fas fa-share"></i>} />
       </div>
-      Details
-      <form>
-        <label for="fullName">Name</label>
-        <input type="text" id="fullName" name="fullName" value="" />
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" value="" />
-        <label for="phone">Phone</label>
-        <input type="phone" id="phone" name="phone" value="" />
-        <label for="remarks">Remarks</label>
+      <div className="tab-box__details">Details</div>
+      <form className="tab-box__form">
+        <p>Name</p>
+        <input type="text" name="fullName" placeholder="Name" />
+        <span className="tab-box__flex-container">
+          <span className="tab-box__flex-first">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Email" />
+          </span>
+          <span className="tab-box__flex-second">
+            <label>Phone</label>
+            <input type="phone" name="phone" placeholder="Phone" />
+          </span>
+        </span>
+        <label>Remarks</label>
         <textarea
           type="text"
-          id="remarks"
           name="remarks"
-          rows="4"
-          cols="50"
-          value=""
+          rows="2"
+          cols="45"
+          placeholder="Remarks"
         />
-        <input type="submit" value="Submit" />
       </form>
     </div>
   );

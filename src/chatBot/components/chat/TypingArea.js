@@ -3,7 +3,7 @@ import Link from "../Link";
 
 function TypingArea() {
   return (
-    <div>
+    <div className="chat-box__typingArea">
       <Link link="#" name={<i className="fas fa-laugh"></i>} />
       <input type="text" placeholder="Enter a message" />
       <Link link="#" name={<i className="fas fa-paperclip"></i>} />

@@ -1,13 +1,13 @@
 import React from "react";
-import Header from "../containers/Header";
-import Chat from "../containers/Chat";
+import Header from "./Header";
+import Chat from "./Chat";
 
 function RightSide() {
   return (
-    <React.Fragment>
+    <div className="flexBox-Right">
       <Header />
       <Chat />
-    </React.Fragment>
+    </div>
   );
 }
 

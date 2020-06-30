@@ -9,7 +9,7 @@ import ControlePan from "../components/header/ControlePan";
 
 const Header = () => {
   return (
-    <React.Fragment>
+    <div className="header">
       <Link
         link="#"
         name={
@@ -39,7 +39,7 @@ const Header = () => {
       <Message />
       <UserAdd /> */}
       <ControlePan />
-    </React.Fragment>
+    </div>
   );
 };
 

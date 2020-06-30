@@ -1,10 +1,11 @@
 import React from "react";
-import RightSide from "./chatBot/components/RightSide";
-import LeftSide from "./chatBot/components/LeftSide";
+import "./App.css";
+import RightSide from "./chatBot/containers/RightSide";
+import LeftSide from "./chatBot/containers/LeftSide";
 
 function App() {
   return (
-    <div>
+    <div className="flexBox-container">
       <LeftSide />
       <RightSide />
     </div>

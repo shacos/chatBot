@@ -1,3 +1,210 @@
 .flexBox-container {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
   display: flex;
+  justify-content: center;
+  height: 66rem;
+}
+
+.flexBox-Left {
+  border-right: 0.1rem solid rgba(204, 204, 204, 0.801);
+  flex: 1;
+}
+
+.flexBox-Right {
+  flex: 3;
+}
+
+a,
+a:hover {
+  color: rgb(179, 194, 248);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Right side styling 'Users component' */
+.user-box {
+  text-align: center;
+  line-height: 1.8;
+  position: relative;
+}
+
+.fa-arrow-left {
+  color: rgba(0, 0, 0, 0.109);
+  font-size: 1.7rem;
+  position: absolute;
+  top: 4%;
+  right: 5%;
+}
+
+.far.fa-user {
+  color: #fff;
+  background-color: hsla(192, 55%, 64%, 0.8);
+  border-radius: 0.5rem;
+  font-size: 3.5rem;
+  margin-top: 4.5rem;
+  padding: 1.8rem;
+}
+
+.user-box__name {
+  color: rgba(0, 0, 0, 0.705);
+  margin-top: 1.5rem;
+}
+
+.user-box__country {
+  font-size: 1.3rem;
+  margin-top: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.user-box__country span {
+  color: rgb(179, 194, 248);
+  margin-left: 0.5rem;
+}
+
+.user-box__button {
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+  text-transform: capitalize;
+}
+
+.user-box__button i {
+  margin-right: 1rem;
+}
+
+.fas.fa-ellipsis-h {
+  margin-right: 0;
+}
+
+/* Right side styling 'Tab component' */
+.tab-box {
+  font-size: 1.3rem;
+}
+
+.tab-box__links {
+  background-color: rgba(238, 238, 238, 0.767);
+  padding: 0.4rem 0;
+}
+
+.tab-box a {
+  color: rgba(0, 0, 0, 0.411);
+  padding: 0 1.5rem;
+}
+
+.tab-box a:first-child {
+  color: black;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.6rem;
+}
+
+.tab-box__content input,
+textarea,
+input::placeholder,
+textarea::placeholder {
+  border-color: rgba(0, 0, 0, 0.13);
+  color: rgba(0, 0, 0, 0.411);
+}
+
+.tab-box__currentlyOn {
+  padding: 1.3rem;
+}
+
+.tab-box__currentlyOn input {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  width: 32.5rem;
+  padding-left: 1rem;
+}
+
+.tab-box__currentlyOn a {
+  border-top: 2px solid rgba(0, 0, 0, 0.13);
+  border-right: 2px solid rgba(0, 0, 0, 0.13);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.13);
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0.3rem 0 0.4rem 0.7rem;
+}
+
+.tab-box__details {
+  background-color: rgba(238, 238, 238, 0.767);
+  padding: 0.4rem 0 0.4rem 1.4rem;
+}
+
+.tab-box__form {
+  color: rgb(179, 194, 248);
+  padding: 1.3rem;
+}
+
+.tab-box__form input[type="text"] {
+  border-radius: 0.5rem;
+  height: 3rem;
+  margin-bottom: 1.3rem;
+  padding: 1rem;
+  width: 35.4rem;
+}
+
+.tab-box__flex-container {
+  display: flex;
+  margin-bottom: 1.3rem;
+}
+
+.tab-box__flex-container input {
+  border-radius: 0.5rem;
+  height: 3rem;
+  width: 17rem;
+  padding: 1rem;
+}
+
+.tab-box__flex-second {
+  margin-left: 1rem;
+}
+
+.tab-box textarea {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+/* Left side styling 'Header container' */
+.header {
+  border-bottom: 0.1rem solid rgba(204, 204, 204, 0.801);
+  font-weight: 800;
+  padding: 0.8rem 0.7rem;
+}
+
+.header a {
+  color: rgba(0, 0, 0, 0.514);
+  padding: 0 1.2rem;
+}
+
+.fa-share,
+.fa-laptop,
+.fa-comment-alt {
+  margin-right: 1rem;
+}
+
+.header input[type="text"] {
+  border: none;
+  padding: 0 1.2rem;
+  width: 60.4rem;
+}
+
+.header input[type="text"]::placeholder {
+  font-weight: 800;
+}
+
+.fa-comment-alt {
+  color: #007bff;
+}
+
+/* Left side styling 'Chat container' */
+/* .chat-box {
+  position: relative;
+}
+
+.chat-box__typingArea {
+  position: absolute;
+  bottom: 0;
+} */
+.chat-box {
 }

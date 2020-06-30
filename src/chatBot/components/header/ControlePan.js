@@ -3,11 +3,11 @@ import Link from "../Link";
 
 function ControlePan() {
   return (
-    <React.Fragment>
+    <span>
       <Link link="#" name={<i className="fas fa-window-minimize"></i>} />
       <Link link="#" name={<i className="fas fa-expand-alt"></i>} />
       <Link link="#" name={<i className="fas fa-times"></i>} />
-    </React.Fragment>
+    </span>
   );
 }
 

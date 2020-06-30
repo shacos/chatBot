@@ -3,9 +3,9 @@ import Message from "../components/chat/Message";
 import TypingArea from "../components/chat/TypingArea";
 
 function Chat() {
-  const sender = true;
+  // const sender = true;
   return (
-    <div>
+    <div className="chat-box">
       <Message text={["Sales", "Service", "Schedule Appointment"]} />
       <TypingArea />
     </div>

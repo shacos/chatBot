@@ -5,11 +5,13 @@ import ProfileTab from "./ProfileTab";
 function Tabs() {
   const [state, setState] = useState(true);
   return (
-    <div>
-      <Link link="#" name="Profile" onClick={() => setState(true)} />
-      <Link link="#" name="Browser & Software" />
-      <Link link="#" name="Notes" />
-      {state && <ProfileTab />}
+    <div className="tab-box">
+      <div className="tab-box__links">
+        <Link link="#" name="Profile" onClick={() => setState(true)} />
+        <Link link="#" name="Browser & Software" />
+        <Link link="#" name="Notes" />
+      </div>
+      <div className="tab-box__content">{state && <ProfileTab />}</div>
     </div>
   );
 }

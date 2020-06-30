@@ -1,12 +1,13 @@
 import React from "react";
-import Link from "../Link";
 
 function Button(props) {
   return (
-    <React.Fragment>
-      <i className={props.iconName}></i>
-      <Link link={props.link} name={props.text} />
-    </React.Fragment>
+    <span className="user-box__button">
+      <button type="button" className={props.type}>
+        <i className={props.iconName}></i>
+        {props.text}
+      </button>
+    </span>
   );
 }
 
